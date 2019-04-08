@@ -1,26 +1,24 @@
 .navbar
     &-wrap
         display: flex
+        justify-content: space-between
         align-items: center
-        justify-content: center
         min-height: 60px
         padding-top: 20px
         padding-bottom: 20px
-    &__logo
-        flex-grow: 20
-    &__smartphone
-        flex-grow: 1
         text-align: center
-    &__phone
-        +bold
-        font-size: 30px
-        flex-grow: 1
-        text-align: center
-    &__text
-        +medium 
-        font-size: 12px
-        flex-grow: 1
-        text-align: center
-    &__button
-        height: 60px
-        flex-grow: 1
+        &-rightside
+            display: flex
+            justify-content: space-between
+            align-items: center
+            min-width: 470px
+        &__phone
+            +bold
+            font-size: 30px
+        &__text
+            +medium 
+            font-size: 12px
+            max-width: 77px
+        &__button
+            min-width: 220px
+            height: 60px
