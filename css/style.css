@@ -4,7 +4,7 @@
 }
 
 .header {
-  background: #141B24 url(../img/header-photo.png) no-repeat top left;
+  background: #141B24 url(../img/header/header-photo.png) no-repeat top left;
   background-size: contain;
 }
 
@@ -50,6 +50,25 @@ body {
   font-family: 'Gilroy Extra Bold', sans-serif;
   text-transform: uppercase;
   color: #fff;
+}
+
+.section {
+  margin-top: 100px;
+}
+
+.section-suptitle {
+  font-size: 44px;
+  font-family: 'Gilroy Extra Bold', sans-serif;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  font-size: 44px;
+  text-transform: uppercase;
+}
+
+.section__suptitle, .section__subtitle {
+  margin: 0;
 }
 
 .navbar-wrap {
@@ -163,5 +182,92 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.features {
+  color: #20262F;
+  margin-bottom: 50px;
+}
+
+.features-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.features-block__item {
+  padding: 50px 40px 20px;
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+  border: 1px solid #E5E8EC;
+  position: relative;
+}
+
+.features-block__item:before {
+  content: "";
+  width: 20px;
+  height: 3px;
+  background-color: #2B60C0;
+  position: absolute;
+  top: 56%;
+}
+
+.features-block__image {
+  margin-bottom: 97px;
+  height: 70px;
+}
+
+.features-block__title {
+  font-family: 'Gilroy Extra Bold', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.features-block__text {
+  margin-top: 10px;
+  margin-bottom: 0;
+  min-height: 82px;
+  font-size: 16px;
+}
+
+.preorder {
+  background: url("../img/preorder-bg.png") no-repeat top right;
+  background-size: contain;
+  min-height: 560px;
+  position: relative;
+}
+
+.preorder-rightside {
+  margin-left: auto;
+  margin-right: 0;
+  max-width: 481px;
+}
+
+.preorder__title {
+  font-family: 'Gilroy Extra Bold', sans-serif;
+  padding-top: 85px;
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+.preorder__button {
+  min-width: 380px;
+  margin-bottom: 15px;
+}
+
+.preorder__text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.preorder__car {
+  position: absolute;
+  top: -41px;
+  left: 11%;
 }
 /*# sourceMappingURL=style.css.map */

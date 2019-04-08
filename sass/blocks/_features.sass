@@ -1,0 +1,34 @@
+.feature
+    &s
+        color: $text-color-secondary
+        margin-bottom: 50px
+        &-block 
+            display: flex
+            flex-wrap: wrap
+            margin-top: 50px
+            &__item
+                padding: 50px 40px 20px
+                flex-basis: 33.33%
+                border: 1px solid #E5E8EC
+                position: relative
+                &:before
+                    content: ""
+                    width: 20px
+                    height: 3px
+                    background-color: $blue
+                    position: absolute
+                    top: 56%
+            &__image
+                margin-bottom: 97px
+                height: 70px
+            &__title
+                +bold
+                font-size: 18px
+                text-transform: uppercase
+                margin: 0
+            &__text
+                margin-top: 10px
+                margin-bottom: 0
+                min-height: 82px
+                font-size: 16px
+                
