@@ -1,0 +1,89 @@
+.tariff
+    background: url("../img/tariff-bg.png") no-repeat top left
+    background-size: contain
+    padding-bottom: 90px
+    padding-top: 120px
+    &__title
+        +bold
+        font-size: 44px
+        text-transform: uppercase
+    &-heading
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__buttons
+            font-size: 0
+    &__button
+        display: inline-block
+        padding: 30px 36px
+        margin: 0
+    &-block 
+        color: $text-color-secondary
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 35px
+        &__item
+            background-color: #ffffff
+            max-width: 370px
+            padding: 30px
+            +regular
+        &__title
+            +bold
+            font-size: 28px
+            margin: 0
+            margin-bottom: 10px
+        &__subtitle
+            +medium
+            font-size: 16px
+            margin: 0
+            margin-bottom: 22px
+        &__price
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border-top: 1px solid #E8E9ED
+            border-bottom: 1px solid #E8E9ED
+            padding: 20px 0px
+        &__cost
+            +bold
+            font-size: 28px
+            color: $blue
+            min-width: 110px
+            &-info
+                font-size: 12px
+        &__additional
+            padding: 0
+            margin: 0
+            margin-top: 22px
+            margin-bottom: 5px
+            list-style: none
+            text-transform: lowercase
+            font-size: 15px
+            line-height: 22px
+            &-item
+                &:before
+                    content: ''
+                    display: inline-block
+                    height: 3px
+                    width: 3px
+                    vertical-align: middle
+                    border-radius: 50%
+                    background-color:#000
+                    margin-right: 5px
+        &__image
+            &-car
+                min-height: 160px
+                display: flex
+                justify-content: center
+                align-items: flex-end
+        &__description
+            font-size: 15px
+            line-height: 22px
+            margin-bottom: 20px
+        &__button
+            width: 100%
+                
+
+
+        

@@ -37,6 +37,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Gilroy Regular';
+  src: url("../fonts/Gilroy-Regular.eot");
+  src: url("../fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'Gilroy Ultra Light', sans-serif;
   color: #fff;
@@ -50,6 +58,11 @@ body {
   font-family: 'Gilroy Extra Bold', sans-serif;
   text-transform: uppercase;
   color: #fff;
+}
+
+.button-disable {
+  background: #ffffff;
+  color: #20262F;
 }
 
 .section {
@@ -306,5 +319,146 @@ body {
   margin-top: 14px;
   margin-bottom: 33px;
   min-height: 50px;
+}
+
+.tariff {
+  background: url("../img/tariff-bg.png") no-repeat top left;
+  background-size: contain;
+  padding-bottom: 90px;
+  padding-top: 120px;
+}
+
+.tariff__title {
+  font-family: 'Gilroy Extra Bold', sans-serif;
+  font-size: 44px;
+  text-transform: uppercase;
+}
+
+.tariff-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tariff-heading__buttons {
+  font-size: 0;
+}
+
+.tariff__button {
+  display: inline-block;
+  padding: 30px 36px;
+  margin: 0;
+}
+
+.tariff-block {
+  color: #20262F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 35px;
+}
+
+.tariff-block__item {
+  background-color: #ffffff;
+  max-width: 370px;
+  padding: 30px;
+  font-family: 'Gilroy Regular', sans-serif;
+}
+
+.tariff-block__title {
+  font-family: 'Gilroy Extra Bold', sans-serif;
+  font-size: 28px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.tariff-block__subtitle {
+  font-family: 'Gilroy Medium', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.tariff-block__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #E8E9ED;
+  border-bottom: 1px solid #E8E9ED;
+  padding: 20px 0px;
+}
+
+.tariff-block__cost {
+  font-family: 'Gilroy Extra Bold', sans-serif;
+  font-size: 28px;
+  color: #2B60C0;
+  min-width: 110px;
+}
+
+.tariff-block__cost-info {
+  font-size: 12px;
+}
+
+.tariff-block__additional {
+  padding: 0;
+  margin: 0;
+  margin-top: 22px;
+  margin-bottom: 5px;
+  list-style: none;
+  text-transform: lowercase;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.tariff-block__additional-item:before {
+  content: '';
+  display: inline-block;
+  height: 3px;
+  width: 3px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: #000;
+  margin-right: 5px;
+}
+
+.tariff-block__image-car {
+  min-height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.tariff-block__description {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.tariff-block__button {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

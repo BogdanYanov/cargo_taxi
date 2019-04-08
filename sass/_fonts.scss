@@ -28,6 +28,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Gilroy Regular';
+    src: url('../fonts/Gilroy-Regular.eot');
+    src: url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Regular.woff') format('woff'),
+        url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @mixin light {
     font-family: 'Gilroy Ultra Light', sans-serif;
 }
@@ -38,4 +48,8 @@
 
 @mixin medium {
     font-family: 'Gilroy Medium', sans-serif;
+}
+
+@mixin regular{
+    font-family: 'Gilroy Regular', sans-serif;
 }
