@@ -14,12 +14,43 @@ body
         color: $text-color-secondary
 .section
     margin-top: 150px
+    &-suptitle, &-subtitle
+        font-size: 44px
+        text-transform: uppercase
+        color: $text-color-secondary
     &-suptitle
-        font-size: 44px
         +bold
-        text-transform: uppercase
-    &-subtitle
-        font-size: 44px
-        text-transform: uppercase
     &__suptitle, &__subtitle
         margin: 0
+
+.input, .form__button
+    @include placeholder
+        color: black
+    display: block
+    min-height: 70px
+    min-width: 340px
+    font-size: 14px
+    padding: 0 28px
+    border: 1px solid #E8E9ED
+    background-color: #ffffff
+    text-align: left
+    line-height: 22px
+
+.form
+    &__column, &__button
+        display: flex
+        justify-content: space-between
+    &__column
+        flex-direction: column
+        &-item 
+            margin-bottom: 10px
+            &:last-child
+                margin-bottom: 0
+    &__button
+        align-items: center
+        &-icon
+            display: block
+            background: url("../img/plus.png") no-repeat center right
+            height: 14px
+            width: 14px
+            line-height: 22px

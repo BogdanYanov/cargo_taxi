@@ -69,19 +69,84 @@ body {
   margin-top: 150px;
 }
 
-.section-suptitle {
+.section-suptitle, .section-subtitle {
   font-size: 44px;
-  font-family: 'Gilroy Extra Bold', sans-serif;
   text-transform: uppercase;
+  color: #20262F;
 }
 
-.section-subtitle {
-  font-size: 44px;
-  text-transform: uppercase;
+.section-suptitle {
+  font-family: 'Gilroy Extra Bold', sans-serif;
 }
 
 .section__suptitle, .section__subtitle {
   margin: 0;
+}
+
+.input, .form__button {
+  display: block;
+  min-height: 70px;
+  min-width: 340px;
+  font-size: 14px;
+  padding: 0 28px;
+  border: 1px solid #E8E9ED;
+  background-color: #ffffff;
+  text-align: left;
+  line-height: 22px;
+}
+
+.input::-webkit-input-placeholder, .form__button::-webkit-input-placeholder {
+  color: black;
+}
+
+.input:-moz-placeholder, .form__button:-moz-placeholder {
+  color: black;
+}
+
+.input::-moz-placeholder, .form__button::-moz-placeholder {
+  color: black;
+}
+
+.input:-ms-input-placeholder, .form__button:-ms-input-placeholder {
+  color: black;
+}
+
+.form__column, .form__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form__column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__column-item {
+  margin-bottom: 10px;
+}
+
+.form__column-item:last-child {
+  margin-bottom: 0;
+}
+
+.form__button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__button-icon {
+  display: block;
+  background: url("../img/plus.png") no-repeat center right;
+  height: 14px;
+  width: 14px;
+  line-height: 22px;
 }
 
 .navbar-wrap {
@@ -136,12 +201,6 @@ body {
   padding-top: 14px;
 }
 
-.menu-container {
-  max-width: 860px;
-  margin-left: 375px;
-  margin-right: auto;
-}
-
 .menu__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,9 +208,9 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .menu__link {
@@ -159,6 +218,7 @@ body {
   font-family: 'Gilroy Medium', sans-serif;
   text-decoration: none;
   color: #ffffff;
+  margin-right: 20px;
 }
 
 .hero {
@@ -332,6 +392,8 @@ body {
   font-family: 'Gilroy Extra Bold', sans-serif;
   font-size: 44px;
   text-transform: uppercase;
+  margin: 0;
+  color: #ffffff;
 }
 
 .tariff-heading {
@@ -456,9 +518,90 @@ body {
   font-size: 15px;
   line-height: 22px;
   margin-bottom: 20px;
+  margin-top: 22px;
 }
 
 .tariff-block__button {
   width: 100%;
+}
+
+.calculator-container {
+  border: 3px solid #2B60C0;
+  padding: 40px;
+}
+
+.calculator__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 30px;
+}
+
+.warranty {
+  min-height: 635px;
+  padding-top: 110px;
+  padding-bottom: 76px;
+  background: url("../img/warranty-bg.png") no-repeat top left;
+  background-size: contain;
+}
+
+.warranty-container {
+  position: relative;
+}
+
+.warranty__car {
+  display: block;
+  position: absolute;
+  top: -27%;
+  right: -10%;
+}
+
+.warranty__title {
+  font-family: 'Gilroy Extra Bold', sans-serif;
+  text-transform: uppercase;
+  font-size: 44px;
+  margin: 0;
+}
+
+.warranty-block {
+  margin-top: 45px;
+}
+
+.warranty-block__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 480px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.warranty-block__text {
+  max-width: 390px;
+}
+
+.warranty-block__title {
+  font-family: 'Gilroy Extra Bold', sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.warranty-block__subtext {
+  font-size: 16px;
+  min-height: 82px;
+  line-height: 24px;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
