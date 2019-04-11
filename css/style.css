@@ -604,4 +604,65 @@ body {
   line-height: 24px;
   margin: 0;
 }
+
+.info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+.info-block__item {
+  padding: 30px 30px 18px;
+  border: 1px solid #E8E9ED;
+  min-width: 270px;
+  min-height: 180px;
+}
+
+.info-block__text {
+  display: block;
+  font-family: 'Gilroy Medium', sans-serif;
+  max-width: 145px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #20262F;
+  margin-top: 28px;
+}
+
+.offer {
+  background: url("../img/offer-bg.png") no-repeat top left;
+  background-size: contain;
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+.offer__title {
+  font-family: 'Gilroy Extra Bold', sans-serif;
+  font-size: 44px;
+  line-height: 52px;
+  max-width: 820px;
+}
+
+.offer__form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.offer__button, .offer__input {
+  min-width: 370px;
+  max-height: 70px;
+}
 /*# sourceMappingURL=style.css.map */
